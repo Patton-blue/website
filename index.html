@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patton Blue, LLC</title>
+  <meta name="description" content="Patton Blue, LLC">
+  <style>
+    :root {
+      --bg: #fafaf8;
+      --ink: #1c2733;
+      --muted: #6b7684;
+      --accent: #2456a6;
+      --rule: #d9dce0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #10161d;
+        --ink: #e8eaed;
+        --muted: #8a94a0;
+        --accent: #7da7e8;
+        --rule: #2a333d;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    main { text-align: center; }
+    h1 {
+      font-size: clamp(1.9rem, 6vw, 3rem);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+    h1 .blue { color: var(--accent); }
+    .rule {
+      width: 3.5rem;
+      height: 1px;
+      background: var(--rule);
+      margin: 1.75rem auto;
+    }
+    p {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .contact {
+      margin-top: 1.5rem;
+      letter-spacing: 0.12em;
+      text-transform: none;
+    }
+    .contact a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .contact a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Patton <span class="blue">Blue</span>, LLC</h1>
+    <div class="rule"></div>
+    <p>Est. 2023</p>
+    <p class="contact"><a href="mailto:admin@patton.blue">admin@patton.blue</a></p>
+  </main>
+</body>
+</html>
